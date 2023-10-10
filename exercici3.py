@@ -100,7 +100,7 @@ def buscar_client():
             break
 
     if not trobat:
-        print("No s'ha trobat cap client amb aquest DNI o NIE.")
+        print(f"No s'ha trobat cap client amb aquest DNI o NIE.")
 
 
 # Función para editar un cliente
@@ -110,7 +110,7 @@ def editar_client():
 
     for compte in clients:
         if compte.nom == nom:
-            print("Dades actuals del client:")
+            print(f"Dades actuals del client:")
             mostrar_dades_client(compte)
 
             nou_nom = input("Nou nom del client (deixa en blanc si no vols modificar): ")
